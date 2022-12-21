@@ -11,10 +11,12 @@ import {
   setNewPasswordRequest,
 } from 'types/auth';
 
-import { API_REQUEST_URL, API_REQUEST_URL_V2 } from './apiConstants';
 import { apiUnionEntryPoint } from './apiUnionEntryPoint';
 
+export const API_REQUEST_URL = '/rs/v1';
+export const API_REQUEST_URL_V2 = '/rs/v2';
 const apiUrlCommonV2 = `${API_REQUEST_URL_V2}/users/`;
+
 
 export const authApi = apiUnionEntryPoint.injectEndpoints({
   endpoints: (builder) => ({
